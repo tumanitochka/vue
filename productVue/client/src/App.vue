@@ -2,7 +2,7 @@
     <header>
       <nav>
         <RouterLink to="/">Главная</RouterLink>
-        <RouterLink to="/product-list">Продукты</RouterLink>
+        <RouterLink to="/product-list">Товары</RouterLink>
       </nav>
     </header>
     <main>
