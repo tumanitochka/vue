@@ -15,10 +15,11 @@
     "name": {
       "type": "string"
     },
-    "product": {
+    "products": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::product.product"
+      "relation": "manyToMany",
+      "target": "api::product.product",
+      "inversedBy": "categories"
     }
   }
 }
