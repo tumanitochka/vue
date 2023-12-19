@@ -21,7 +21,7 @@
     "price": {
       "type": "integer"
     },
-    "image": {
+    "img": {
       "type": "media",
       "multiple": true,
       "required": false,

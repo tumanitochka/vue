@@ -23,7 +23,6 @@ export default {
         const data = await fetch('http://localhost:1337/api/products?populate=*')
         const js = await data.json()
         this.products = js.data
-        console.log(this.products)
     }
 }
 </script>

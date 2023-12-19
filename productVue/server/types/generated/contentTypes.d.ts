@@ -413,7 +413,7 @@ export interface ApiProductProduct extends Schema.CollectionType {
     title: Attribute.String;
     description: Attribute.Text;
     price: Attribute.Integer;
-    image: Attribute.Media;
+    img: Attribute.Media;
     categories: Attribute.Relation<
       'api::product.product',
       'manyToMany',
