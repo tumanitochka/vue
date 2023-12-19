@@ -7,10 +7,9 @@
 
 <script>
 import ProductCard from '../components/ProductCard.vue';
-
 export default {
     components:{
-        ProductCard: ProductCard,
+        ProductCard: ProductCard
     },
     data() {
         return {
@@ -22,8 +21,9 @@ export default {
     },
     async beforeMount(){
         const data = await fetch('http://localhost:1337/api/products?populate=*')
-        const json = await data.json()
-        this.products = json.date
+        const js = await data.json()
+        this.products = js.data
+        console.log(this.products)
     }
 }
 </script>
@@ -34,8 +34,5 @@ export default {
         flex-wrap: wrap;
         gap: 15px;
         margin: 40px auto;
-    }
-    main{
-        color: #000;
     }
 </style>
