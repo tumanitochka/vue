@@ -6,6 +6,7 @@
         
         <p>{{ product.attributes.description }}</p>
         <p>{{ product.attributes.price }} рублей <input type="submit" value="../"></p>
+        <p><input type="number" value="0"><input type="submit" value="Сохранить"></p>
         <button>В корзину</button>
     </div>
 </template>
@@ -33,7 +34,7 @@ export default {
     width: max-content;
     height: max-content;
     padding: 10px;
-    background-color: #f1f1f1;
+    background-color: whitesmoke;
     color: black;
     cursor: pointer;
 
@@ -66,8 +67,10 @@ export default {
         }
     }
 }
+
+input{padding: 5px;border: none;}
 input[type="submit"]{
-    background-color: white;
+    background-color: aliceblue;
     color: brown;
     border: none;
     padding: 5px;
