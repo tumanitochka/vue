@@ -31,8 +31,8 @@ export default {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    width: max-content;
-    height: max-content;
+    width: 260px;
+    height: 320px;
     padding: 10px;
     background-color: whitesmoke;
     color: black;
@@ -45,13 +45,11 @@ export default {
         transition: all .1s linear;
     }
 
-    & img {
-        height: 170px;
-    }
+    & img {height: 40%;width: 100%;object-fit: cover;}
 
     & button {
         width: 100%;
-        padding: 5px;
+        padding: 10px 0;
         background-color: brown;
         color: #f1f1f1;
         border: none;
