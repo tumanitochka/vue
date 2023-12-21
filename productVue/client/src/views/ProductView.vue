@@ -1,5 +1,5 @@
 <template>
-  <h1>Товары</h1>
+  <h1>Услуги</h1>
   <div class="catalog">
     <ProductCard v-for="item in products" :product="item" :key="item.id" />
   </div>
@@ -28,6 +28,11 @@ export default {
 </script>
 
 <style scoped>
+    h1 {
+    display: flex;
+    justify-content: center;
+    color: brown;
+    }
     .catalog {
         display: flex;
         flex-wrap: wrap;
