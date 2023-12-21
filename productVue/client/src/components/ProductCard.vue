@@ -5,7 +5,7 @@
             :src="baseURL + product.attributes.img.data[0].attributes.url">
         
         <p>{{ product.attributes.description }}</p>
-        <p>{{ product.attributes.price }} рублей</p>
+        <p>{{ product.attributes.price }} рублей <input type="submit" value="../"></p>
         <button>В корзину</button>
     </div>
 </template>
@@ -41,7 +41,7 @@ export default {
         -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
         -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
         box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-        transition: all .2s linear;
+        transition: all .1s linear;
     }
 
     & img {
@@ -65,5 +65,15 @@ export default {
             filter: brightness(.8);
         }
     }
+}
+input[type="submit"]{
+    background-color: white;
+    color: brown;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    transition:all .1s linear;
+    &:hover{background-color: brown;color: white;}
+    &:active{filter: brightness(.8);}
 }
 </style>
